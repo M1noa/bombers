@@ -2,6 +2,17 @@ import requests
 import random
 import threading
 
+
+url = 'https://cdn.droplets.cf/ascii.txt'
+response = requests.get(url)
+
+if response.status_code == 200:
+    art = response.text
+    print(art)
+else:
+    print(f'Error fetching ASCII art: {response.status_code}')
+
+
 def send_requests(email, thread_num):
     at_index = email.index('@')
     part1 = email[:at_index]
@@ -45,7 +56,7 @@ def send_requests(email, thread_num):
 def main():
     email = input("Enter email: ")
     threads = []
-    for i in range(100):
+    for i in range(500):
         t = threading.Thread(target=send_requests, args=(email, i))
         t.start()
         threads.append(t)
