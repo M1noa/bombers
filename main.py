@@ -19,7 +19,7 @@ def send_requests(email, thread_num):
     part2 = email[at_index:]
     i = 0
     proxy_index = 0
-    proxies = requests.get('https://cdn.droplets.cf/http-proxies.txt').text.strip().split('\n')
+    proxies = requests.get('https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt').text.strip().split('\n')
     while True:
         mail = f"{part1}+{random.randint(1, 30000)}{part2}"
         if i % 50 == 0:
