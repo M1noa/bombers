@@ -2,7 +2,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/M1noa/bombers.svg)](https://github.com/M1noa/bombers/stargazers) [![GitHub forks](https://img.shields.io/github/forks/M1noa/bombers.svg)](https://github.com/M1noa/bombers/network) 
 
-> (THIS IS FOR EDUCATIONAL PURPOSES ONLY. THIS TOOL ABUSES APIS AND IT'S AGAINST THEIR TOS. PLEASE DO NOT SET UP THIS TOOL.)
+> (THIS IS FOR EDUCATIONAL PURPOSES ONLY. THIS TOOL ABUSES APIS AND IT'S AGAINST THEIR TOS.)
 
 ## Installation
 
