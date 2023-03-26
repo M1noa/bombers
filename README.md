@@ -1,6 +1,6 @@
 # Bombers
 
-[![GitHub Stars](https://img.shields.io/github/stars/M1noa/bombers.svg)](https://github.com/M1noa/bombers/stargazers) [![GitHub forks](https://img.shields.io/github/forks/M1noa/bombers.svg)](https://github.com/M1noa/bombers/network) [![ViewCount](https://hits.dwyl.com/Minoa/bombers.svg?label=Views)](http://hits.dwyl.com/Minoa/bombers)
+[![GitHub Stars](https://img.shields.io/github/stars/M1noa/bombers.svg)](https://github.com/M1noa/bombers/stargazers) [![GitHub forks](https://img.shields.io/github/forks/M1noa/bombers.svg)](https://github.com/M1noa/bombers/network) [![ViewCount](https://img.shields.io/endpoint?url=https://hits.dwyl.com/Minoa/bombers.json%3Fcolor%3Dblue&label=Views)]
 
 > (THIS IS FOR EDUCATIONAL PURPOSES ONLY. THIS TOOL ABUSES APIS AND IT'S AGAINST THEIR TOS.)
 
@@ -20,9 +20,3 @@ Please make sure to update tests as appropriate.
 ## License
 
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
-
-
-
-
-
-  [![Viwes](https://hits.dwyl.com/Minoa/bombers.svg?style=flat-square)](http://hits.dwyl.com/Minoa/bombers)
