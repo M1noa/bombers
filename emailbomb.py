@@ -41,7 +41,7 @@ def send_requests(email, thread_num):
                 'Sec-Fetch-Site': 'same-site',
                 'DNT': '1',
                 'Sec-GPC': '1',
-                'TE': 'trailers'
+                'TE': 'trailers',
             }, json={
                 'email': mail
             }, proxies=proxy)
