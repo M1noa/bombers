@@ -12,7 +12,8 @@
 4. Install the required packages: `pip install -r requirements.txt`
 
 ## Downloads
-
+[Download The Email Bomber](https://github.com/M1noa/bombers/raw/main/emailbomb.py)
+[Download The SMS Bomber](https://github.com/M1noa/bombers/raw/main/smsbomb.py)
 
 ## Contributing
 
