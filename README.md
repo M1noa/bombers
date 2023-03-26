@@ -12,7 +12,7 @@
 4. Install the required packages: `pip install -r requirements.txt`
 
 ## Downloads
-<a download="filename.py" href="https://github.com/M1noa/bombers/raw/main/emailbomb.py">Download Python script</a>
+<a href="[path_to_file](https://github.com/M1noa/bombers/raw/main/smsbomb.py)" download="smsbomb.py">Download</a>
 
 [Download The SMS Bomber](https://github.com/M1noa/bombers/raw/main/smsbomb.py)
 
