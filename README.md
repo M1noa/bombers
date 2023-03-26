@@ -25,5 +25,4 @@ This project is licensed under the [MIT License](https://choosealicense.com/lice
 
 
 
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-4ac34c2c-9c07-4f85-b9e4-5a809212af13"></div>
+  [![Viwes](https://hits.dwyl.com/Minoa/bombers.svg?style=flat-square)](http://hits.dwyl.com/Minoa/bombers)
