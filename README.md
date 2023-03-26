@@ -11,10 +11,6 @@
 3. Navigate to the directory: `cd REPOSITORY`
 4. Install the required packages: `pip install -r requirements.txt`
 
-## Downloads
-<a href="https://github.com/M1noa/bombers/raw/main/smsbomb.py" download="smsbomb.py">Download</a>
-
-[Download The SMS Bomber](https://github.com/M1noa/bombers/raw/main/smsbomb.py)
 
 ## Contributing
 
