@@ -11,6 +11,9 @@
 3. Navigate to the directory: `cd REPOSITORY`
 4. Install the required packages: `pip install -r requirements.txt`
 
+## Downloads
+
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
