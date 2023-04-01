@@ -79,7 +79,7 @@ def vote(proxy):
     logging.info(output)
     print(output)
 
-num_threads = 10000
+num_threads = 50
 
 while True:
     proxies = get_proxies()
