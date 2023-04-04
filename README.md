@@ -9,7 +9,7 @@
 1. Install [Python 3](https://www.python.org/downloads/).
 2. Clone the repository: `git clone https://github.com/M1noa/bombers.git`
 3. Navigate to the directory: `cd bombers`
-4. Install the required packages: `pip install -r requirements.txt`
+4. Run one of the scripts: `python3 [email/sms]bomb.py`
 
 
 ## Contributing
