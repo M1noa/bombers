@@ -5,15 +5,6 @@ import time
 import random
 import logging
 
-url = 'https://cdn.droplets.cf/ascii.txt'
-response = requests.get(url)
-
-if response.status_code == 200:
-    art = response.text
-    print(art)
-else:
-    print(f'Error fetching ASCII art: {response.status_code}')
-
 phone_number = input("Enter phone number: ")
 
 logging.basicConfig(filename='log.log', filemode='a', level=logging.DEBUG,
