@@ -94,7 +94,7 @@ def vote(proxy):
     logging.info(output)
     print(output)
 
-num_threads = 1
+num_threads = 10
 
 while True:
     proxies = get_proxies()
