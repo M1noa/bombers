@@ -11,7 +11,28 @@ logging.basicConfig(filename='log.log', filemode='a', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_proxies():
-    # ... (existing code for getting proxies)
+    # First try to fetch proxies from primary source
+    primary_url = "https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt"
+    try:
+        response = requests.get(primary_url, timeout=5)
+        if response.status_code == 200:
+            proxies = response.text.splitlines()
+            return proxies
+    except:
+        pass
+    
+    # If fetching from primary source fails, try the backup source
+    backup_url = "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt"
+    try:
+        response = requests.get(backup_url, timeout=5)
+        if response.status_code == 200:
+            proxies = response.text.splitlines()
+            return proxies
+    except:
+        pass
+    
+    # If both sources fail, return an empty list
+    return []
 
 def vote(proxy):
     headers = {
