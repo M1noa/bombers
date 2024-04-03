@@ -9,7 +9,7 @@ def send_requests(email, thread_num):
     part2 = email[at_index:]
     i = 0
     proxy_index = 0
-    proxies = requests.get('https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt').text.strip().split('\n')
+    proxies = requests.get('https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt').text.strip().split('\n')
     while True:
         mail = f"{part1}+{random.randint(1, 30000)}{part2}"
         if i % 50 == 0:
@@ -17,22 +17,23 @@ def send_requests(email, thread_num):
         proxy = {'http': proxies[proxy_index], 'https': proxies[proxy_index]}
         try:
             response = requests.post('https://user.atlasvpn.com/v1/request/join', headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:110.0) Gecko/20100101 Firefox/110.0',
-                'Accept': 'application/json, text/plain, */*',
-                'Accept-Language': 'en-US,en;q=0.5',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'Content-Type': 'application/json;charset=utf-8',
-                'X-Client-ID': 'Web',
-                'Origin': 'https://account.atlasvpn.com',
-                'Connection': 'keep-alive',
-                'Referer': 'https://account.atlasvpn.com/',
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-site',
-                'DNT': '1',
-                'Sec-GPC': '1',
-                'TE': 'trailers',
-            }, json={
+                'accept': '*/*',
+                'accept': 'application/json, text/plain, */*',
+                'accept-language': 'en-US,en;q=0.9',
+                'content-type': 'application/json;charset=UTF-8',
+                'dnt': '1',
+                'origin': 'https://account.atlasvpn.com',
+                'referer': 'https://account.atlasvpn.com/',
+                '^sec-ch-ua': '^\\^Brave^\\^;v=^\\^123^\\^, ^\\^Not:A-Brand^\\^;v=^\\^8^\\^, ^\\^Chromium^\\^;v=^\\^123^\\^^',
+                'sec-ch-ua-mobile': '?0',
+                '^sec-ch-ua-platform': '^\\^Windows^\\^^',
+                'sec-fetch-dest': 'empty',
+                'sec-fetch-mode': 'cors',
+                'sec-fetch-site': 'same-site',
+                'sec-gpc': '1',
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+                'x-client-id': 'Web',
+            }, data={
                 'email': mail
             }, proxies=proxy)
             if response.status_code == 200:
@@ -46,7 +47,7 @@ def send_requests(email, thread_num):
 def main():
     email = input("Enter email: ")
     threads = []
-    for i in range(500):
+    for i in range(10):
         t = threading.Thread(target=send_requests, args=(email, i))
         t.start()
         threads.append(t)
