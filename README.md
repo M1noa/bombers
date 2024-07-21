@@ -1,4 +1,4 @@
-# Bombers
+# Bombers (broken)
 
 [![ViewCount](https://img.shields.io/endpoint?url=https://hits.dwyl.com/Minoa/bombers.json%3Fcolor%3Dblue&label=Views)](http://hits.dwyl.com/Minoa/bombers)
 > (THIS IS FOR EDUCATIONAL PURPOSES ONLY. THIS TOOL ABUSES APIS AND IT'S AGAINST THEIR TOS.)
